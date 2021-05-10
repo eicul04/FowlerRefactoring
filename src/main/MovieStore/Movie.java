@@ -1,7 +1,7 @@
 package MovieStore;
 
 public class Movie {
-    public static final int CHILDRENS = 2;
+    public static final int CHILDREN = 2;
     public static final int REGULAR = 0;
     public static final int NEW_RELEASE = 1;
     private String title;
@@ -24,8 +24,8 @@ public class Movie {
             case Movie.NEW_RELEASE:
                 price = new NewReleasesPrice();
                 break;
-            case Movie.CHILDRENS:
-                price = new ChildrensPrice();
+            case Movie.CHILDREN:
+                price = new ChildrenPrice();
                 break;
             default:
                 throw new IllegalArgumentException("Incorrect Price Code");
